@@ -1,0 +1,6 @@
+FROM centos
+RUN yum install java-1.8.0-openjdk git maven -y
+RUN git clone https://github.com/mastanshaik-kadapa/springboot-hello.git
+WORKDIR springboot-hello
+RUN mvn clean install
+ENTRYPOINT ["java","-jar","target/gs-spring-boot-0.1.0.jar"]
