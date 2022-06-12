@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: springboot-hello
-        image: mastankadapa/springboot:v1
+        image: mastankadapa/springboot:v3
         ports:
         - containerPort: 8080
